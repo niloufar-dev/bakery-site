@@ -357,3 +357,272 @@ li.submenu{
     }
     
 }
+
+.section3{
+    width: 250px;
+    height:300px ;
+    
+    margin:10px auto;
+    position: relative;
+    transform-style:preserve-3d;
+    animation: h2 20s infinite linear;
+    
+    >figure{
+        width:250px;
+        height: 300px;
+        position: absolute;
+        transform-style: preserve-3d;
+        top: 0%;
+        left: 50%;
+        /* transform-origin: center center -500px; */
+        border-radius: 20px;
+        /* overflow: hidden; */
+        box-shadow:0 10px 30px rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        transform: translate(-50%,-50%);
+        /* filter: grayscale(100%); */
+        
+        &:hover{
+            filter: none;
+
+        }
+        >figcaption{
+            position: absolute;
+            top: 100%;
+            font-size: 40px;
+        }
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        
+    }
+}
+.croissant{
+    text-align: center;
+    font-size: 50px;
+    background-image: linear-gradient(to bottom,white 10%,rgb(117, 82, 42) 25%);
+    background-clip: text;
+    color: transparent;
+    margin-top: 130px;
+    >img{
+        width: 280px;
+        /* border-radius: 20px ; */
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+.section4{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    top: -70px;
+    
+    
+    >div:first-child{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        transform: translateY(80px);
+        
+    >figure{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        
+        >div{
+            width: 150px;
+            height: 150px;
+            background-color:rgb(188, 139, 65);
+            position: absolute;
+            left: 100px;
+            top: 35%;
+        }
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: 1s;
+            &:hover{
+                scale: 1.2;
+            }
+
+        }
+        >figcaption{
+            font-size: 20px;position: absolute;
+            bottom:-20px;
+            left: 40%;
+        }
+        >p{
+            font-size: 25px;
+            font-weight: 600;
+            position: absolute;
+            bottom: -60px;
+            left:40%;
+        }
+        &:nth-of-type(1){
+                >img{
+                    transform: translateX(-750px);
+                    animation: pic6 both;
+                    animation-timeline:view(70% 20%);
+                    transition: 9s;
+                }
+            
+
+        }
+        &:nth-of-type(2){
+            >div{
+                background-color: palevioletred;
+                top: 30px;
+            }
+            >figcaption{
+                bottom:35px ;
+                width: 200px;
+                left: 94px;
+            }
+            >p{
+                bottom:1px;
+                left: 94px;
+            }
+            >img{
+                top:-25px;
+                left: 0px;
+                    transform: translateX(-750px);
+                    animation: pic6 both;
+                    animation-timeline:view(70% 20%);
+    
+
+            }
+            
+        }
+        &:nth-of-type(3){
+            >div{
+                background-color: rgb(170, 244, 170);
+                top:-30px;
+            }
+            >figcaption{
+                bottom:95px ;
+                width: 200px;
+                left: 100px;
+            }
+            >p{
+                bottom: 60px;
+            }
+            >img{
+            width: 190px;  
+            height: 190px;  
+            bottom: 120px;
+            left: 30px;
+                transform: translateX(-750px);
+                    animation: pic6 both;
+                    animation-timeline:view(70% 20%);
+    
+            }
+        }
+    }
+    }
+        >div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    >figure{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        >div{
+            width: 150px;
+            height: 150px;
+            background-color:rgb(46, 28, 2);
+            position: absolute;
+            left:-80px;
+            top: 45%;
+        }
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: -60px;
+            bottom: -30px;
+            transition: 1s;
+            &:hover{
+                scale: 1.2;
+            }
+        }
+        >figcaption{
+            font-size: 20px;
+            position: absolute;
+            bottom:-70px;
+            left: -75px;
+        }
+        >p{
+            font-size: 25px;
+            font-weight: 600;
+            position: absolute;
+            bottom: -110px;
+            left: -75px;
+        }
+        &:nth-of-type(1){
+            >img{
+                transform: translateX(750px);
+                animation:pic7 both;
+                animation-timeline:view(70% 20%) ;
+            }
+        }
+        &:nth-of-type(2){
+            >div{
+                background-color: rgb(9, 158, 66);
+                top: 67px;
+                position: absolute;
+            }
+            >figcaption{
+                bottom:-45px ;
+                width: 200px;
+                left: -75px;
+            }
+            >p{
+                bottom: -85px;
+            }
+            >img{
+                width:250px;
+                height: 250px;
+                left: -70px;
+                transform: translateX(750px);
+                animation:pic7 both;
+                animation-timeline:view(70% 20%) ;
+            }
+            
+        }
+        &:nth-of-type(3){
+            >div{
+                background-color: rgb(203, 197, 197);
+                top: 60px;
+            }
+            >figcaption{
+                bottom:-39px;
+                width: 200px;
+                left: -75px;
+            }
+            >p{
+                bottom: -70px;
+            }
+            >img{
+            width: 220px;  
+            height: 220px;  
+            bottom: -40px;
+            left: -60px;
+            transform: translateX(750px);
+                animation:pic7 both;
+                animation-timeline:view(100% 20%) ;
+            }
+        }
+    }
+    }
+
+}
