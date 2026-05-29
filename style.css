@@ -626,3 +626,197 @@ li.submenu{
     }
 
 }
+
+.section5{
+    display: flex;
+    gap:90px;
+    /* justify-content: space-between; */
+    >div:first-child{
+        width: 40%;
+        display: flex;
+        height: 90vh;
+        /* padding: 30px; */
+        margin: 50px 40px;
+        border: none;
+        outline: none;
+        >video{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        }
+    }
+    >div:nth-child(2){
+        margin-top: 50px;
+        width: 300px;
+        height: 100px;
+        >h2{
+            font-size: 65px;
+            width: 700px;
+            animation:color 5s infinite linear ;
+        }
+        >p{
+            font-size: 25px;
+            font-weight: 600px;
+            width: 600px;
+            text-align: justify;
+            margin-top: 70px;
+            line-height: 45px;
+        }
+        >a{
+            text-decoration: none;
+            color:#4b1408;
+            margin-top: 40px;
+            display: flex;
+
+            /* align-items: center; */
+            /* height: 100px; */
+            
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            &:hover{
+                color: black;
+                >i{
+                    transform: translateX(16px);
+                }
+            }
+            
+        >i{
+            font-size: 25px;
+            display: inline-block;
+            margin: 7px 10px 0;
+            transform: translatex(0);
+            transition: .7s;
+            
+
+        }
+        
+        }
+
+    }
+}
+.tit{
+    display: flex;
+    margin-top: 70px;
+    >h2{
+        margin:120px 20px 0;
+        font-size: 40px;
+        color: #39140c;
+        text-transform:uppercase;
+        border-left: 10px solid #39140c;
+        padding: 12px ;
+        height: 70px;
+    }
+    >img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        display: inline-block;
+        margin-top: 60px;
+        filter: drop-shadow(0px 5px 10px rgba(244, 149, 179, 0.982));
+        animation: kitchen 4s ease-in-out infinite;
+        
+    }
+
+}
+
+.section6{
+    display: flex;
+    overflow-x:scroll;
+    padding-bottom: 15px;
+    margin: 40px 20px;
+    gap: 20px;
+     scrollbar-color: #d0680c #f1f1f1;
+    scrollbar-width: thin;
+    
+
+    
+    >div{
+        position: relative;
+        &:hover{
+            &::before{
+                bottom: 90px;
+            }
+            &::after{
+                top: 100px;
+                scale: 1.2;
+                
+            }
+
+        }
+        
+&::before{
+            content: "";
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            width: 200px;
+            height: 280px;
+            background-color: rgba(0, 0, 0, 0.712);
+            position: absolute;
+            bottom:400px;
+            left: 0;
+            border-radius: 20px;
+            transition: 1s;
+        
+        }
+        &::after{
+            content: "Order Now";
+            position: absolute;
+            left: 28%;
+            top:-30px;
+            font-size: 25px;
+            font-weight:550;
+            color: white;
+            transition:1s;
+            cursor: pointer;
+            
+            
+
+        }
+    
+        >img{
+            width: 200px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            margin-bottom: 10px;
+            
+        
+        }
+        
+        >p{
+            font-weight: 600;
+            font-size: 17px;
+        }
+        >div.icon{
+            display: flex;
+            >div{
+                >i{
+                position: relative;
+                color:#ffd700;
+                font-size: 20px;
+                margin-top: 10px;
+                >i{
+                    position: absolute;
+                    color: red;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+                }
+            }
+        
+            }
+        }
+    }
