@@ -41,7 +41,7 @@ The website includes multiple sections such as featured products, customer revie
 
 ## 🚀 Live Demo
 
-🔗
+🔗[View Live Demo](https://niloufar-dev.github.io/bakery-site/index.html)
 
 ---
 
