@@ -186,3 +186,92 @@ li.submenu{
         }
     }    
 }
+
+.section1{
+    width: 100%;
+    height:600px ;
+    /* background-image: linear-gradient(45deg,white,rgb(48, 15, 3)); */
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    
+    >div:first-child{
+        width: 50%;
+        height: 100%;
+        >h1{
+            font-size: 50px;
+            margin-top: 160px;
+            margin-left: 100px;
+            color: rgb(58, 20, 2);
+            width: 600px;
+        }
+        >p{
+            font-size: 25px;
+            margin-left: 100px;
+            margin-top: 50px;
+            width: 500px;
+            text-align: justify;
+        }
+        >div{
+            display: flex;
+            gap: 30px;
+            margin-top: 60px;
+            margin-left: 100px;
+            >button{
+                width: 140px;
+                height: 50px;
+                font-size: 20px;
+                border: none;
+                border-radius: 10px;
+            &:nth-of-type(1){
+                background-color:rgb(58, 20, 2);
+                color: #f1c1a7;
+                transition: 1s;
+                &:hover{
+                    box-shadow: inset 180px 0 #f1c1a7;
+                    color: #39140c;
+                }
+            }
+            &:nth-of-type(2){
+                background-color:#f1c1a7;
+                color:rgb(58, 20, 2) ;
+                border: 2px solid rgb(58, 20, 2) ;
+                transition: 1s;
+                &:hover{
+                    box-shadow: inset 180px 0 #39140c;
+                    color:#f1c1a7;
+                    border: 2px solid #f1c1a7;
+                }
+            }
+            }
+            
+        }
+    }
+    >div:nth-of-type(2){
+        width: 50%;
+        height:100%;
+        animation: img1 both;
+            animation-timeline: scroll();
+            z-index: 2;
+        
+        >img{
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+            margin-top: 120px;
+            margin-left: 120px;
+            position: relative;
+
+            
+            
+            
+            
+        }
+    }
+    
+    
+
+    
+}
